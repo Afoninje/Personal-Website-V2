@@ -1,7 +1,4 @@
 {
-  "name": "alime-photography-html-template",
-  "version": "1.0.0",
-  "description": "Alime - Photography HTML Template",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
