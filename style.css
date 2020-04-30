@@ -1179,7 +1179,7 @@ input:required {
   transition-duration: 800ms;
   height: 76px;
   width: 76px;
-  background-color: #fc6060;
+  background-color: transparent;
   display: inline-block;
   text-align: center;
   line-height: 76px;
@@ -1187,7 +1187,7 @@ input:required {
   color: #ffffff;
   font-size: 30px;
   position: absolute;
-  top: -38px;
+  top: -5px;
   left: 50%;
   margin-left: -38px;
 }
@@ -1205,21 +1205,6 @@ input:required {
   transition-duration: 800ms;
   font-size: 14px;
   margin-bottom: 0;
-}
-.why-choose-us-content:hover,
-.why-choose-us-content:focus {
-  background-color: #fc6060;
-}
-.why-choose-us-content:hover .chosse-us-icon,
-.why-choose-us-content:focus .chosse-us-icon {
-  background-color: #000000;
-  box-shadow: 0 5px 15px 2px rgba(255, 255, 255, 0.15);
-}
-.why-choose-us-content:hover h4,
-.why-choose-us-content:hover p,
-.why-choose-us-content:focus h4,
-.why-choose-us-content:focus p {
-  color: #ffffff;
 }
 
 /* :: 12.0 Breadcrumb CSS */
@@ -1286,11 +1271,7 @@ input:required {
   font-weight: 500;
   margin-bottom: 15px;
 }
-.breadcrumb-area.blog .breadcrumb-content .post-catagory:hover,
-.breadcrumb-area.blog .breadcrumb-content .post-catagory:focus {
-  font-weight: 500;
-  background-color: #000000;
-}
+
 .breadcrumb-area.blog .breadcrumb-content .page-title {
   display: block;
   font-size: 48px;
@@ -1762,11 +1743,7 @@ input:required {
   z-index: 20;
   font-weight: 500;
 }
-.single-post-area .post-catagory:hover,
-.single-post-area .post-catagory:focus {
-  font-weight: 500;
-  background-color: #000000;
-}
+
 .single-post-area .post-content {
   position: absolute;
   left: 30px;
@@ -1893,32 +1870,6 @@ input:required {
 .team-content-area .member-social-info a:hover,
 .team-content-area .member-social-info a:focus {
   color: #fc6060;
-}
-.team-content-area:hover,
-.team-content-area:focus {
-  background-color: #fc6060;
-}
-.team-content-area:hover .member-thumb img,
-.team-content-area:focus .member-thumb img {
-  -webkit-transform: rotate(25deg);
-  -ms-transform: rotate(25deg);
-  transform: rotate(25deg);
-}
-.team-content-area:hover h5,
-.team-content-area:hover span,
-.team-content-area:focus h5,
-.team-content-area:focus span {
-  color: #ffffff;
-}
-.team-content-area:hover .member-social-info a,
-.team-content-area:focus .member-social-info a {
-  color: #ffffff;
-}
-.team-content-area:hover .member-social-info a:hover,
-.team-content-area:hover .member-social-info a:focus,
-.team-content-area:focus .member-social-info a:hover,
-.team-content-area:focus .member-social-info a:focus {
-  color: #000000;
 }
 
 /* :: 15.0 Gallery CSS */
@@ -2117,4 +2068,5 @@ input:required {
   border-radius: 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
+
+
