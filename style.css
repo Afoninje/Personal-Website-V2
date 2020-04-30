@@ -61,7 +61,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  color: #252525;
+  color: black;
   line-height: 1.3;
   font-weight: 600;
 }
@@ -181,8 +181,21 @@ button.mfp-arrow {
 .bg-gray {
   background-color: #f7f7f7 !important;
 }
+
 .bg-black {
-  background-color: black;
+  background-color: #000000;
+}
+.bg-darkblue {
+  background-color: #14213d;
+}
+.bg-orange {
+  background-color: #fca311;
+}
+.bg-lightgray {
+  background-color: #e5e5e5;
+}
+.bg-white {
+  background-color: #ffffff;
 }
 
 textarea:focus,
