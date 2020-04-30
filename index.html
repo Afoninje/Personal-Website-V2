@@ -63,12 +63,12 @@
                 <div class="classynav">
                   <ul id="nav">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Education</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Education">Education</a></li>
                     <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                   </ul>
                 </div>
                 <!-- Nav End -->
@@ -117,7 +117,10 @@
     <!-- Welcome Area End -->
 
     <!-- About Us Area Start -->
-    <div class="about-us-area section-padding-80-0 clearfix bg-white">
+    <div
+      id="About"
+      class="about-us-area section-padding-80-0 clearfix bg-white"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -207,7 +210,10 @@
     <!-- About Us Area End -->
 
     <!-- Why Choose Us Area Start -->
-    <section class="why-choose-us-area bg-orange section-padding-80-0 clearfix">
+    <section
+      id="Skills"
+      class="why-choose-us-area bg-orange section-padding-80-0 clearfix"
+    >
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -390,7 +396,7 @@
     <!-- Why Choose  us Area End -->
 
     <!-- Blog Area Start -->
-    <div class="alime-blog-area section-padding-80-0 bg-darkblue">
+    <div id="Projects" class="alime-blog-area section-padding-80-0 bg-darkblue">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -401,20 +407,21 @@
           <!-- Single Blog Area -->
           <div class="col-12 col-lg-6">
             <div class="single-post-area" data-wow-delay="200ms">
-              <!-- Post Thumbnail -->
-              <img
-                src="img/projects/project4.PNG"
-                alt=""
-                style="width: 525px; height: 300px;"
-              />
-              <!-- Post Catagory -->
-              <p href="#" class="post-catagory">HTML/CSS/Vue.js</p>
-              <!-- Post Conetent -->
-              <div class="post-content">
-                <h2 style="color: black;">Quiz App (Work In Progress)</h2>
-              </div>
-            </div>
+              <h2 style="color: white;">Quiz App (Work In Progress)</h2>
 
+              <img
+                src="img/projects/project4PNG.PNG"
+                alt=""
+                style="max-width: 100%; max-height: 100%; display: block;"
+              />
+            </div>
+            <button type="button" class="btn btn-danger">
+              <img
+                style="height: 30px; width: 30px;"
+                src="img/logo/prototype.png"
+              />
+              HTML/CSS/Vue.js
+            </button>
             <a href="https://projectquizz.netlify.app/#/" target="_blank">
               <button type="button" class="btn btn-light">
                 <img
@@ -438,19 +445,21 @@
           <!-- Single Blog Area -->
           <div class="col-12 col-lg-6">
             <div class="single-post-area" data-wow-delay="200ms">
-              <!-- Post Thumbnail -->
+              <h2 style="color: white;">Loan EMI Calculator</h2>
+
               <img
-                src="img/projects/project3.PNG"
+                src="img/projects/project3PNG.PNG"
                 alt=""
-                style="width: 525px; height: 300px;"
+                style="max-width: 100%; max-height: 100%; display: block;"
               />
-              <!-- Post Catagory -->
-              <p href="#" class="post-catagory">HTML/CSS/Vue.js</p>
-              <!-- Post Conetent -->
-              <div class="post-content">
-                <h2 style="color: black;">Loan EMI Calculator</h2>
-              </div>
             </div>
+            <button type="button" class="btn btn-danger">
+              <img
+                style="height: 30px; width: 30px;"
+                src="img/logo/prototype.png"
+              />
+              HTML/CSS/Vue.js
+            </button>
             <a href="https://loan-emi-calculator.netlify.app/" target="_blank">
               <button type="button" class="btn btn-light">
                 <img
@@ -476,20 +485,21 @@
           <!-- Single Blog Area -->
           <div class="col-12 col-lg-6">
             <div class="single-post-area" data-wow-delay="200ms">
-              <!-- Post Thumbnail -->
+              <h2 style="color: white;">Weather Web-App</h2>
 
               <img
-                src="img/projects/project2.PNG"
+                src="img/projects/project2PNG.PNG"
                 alt=""
-                style="width: 525px; height: 300px;"
+                style="max-width: 100%; max-height: 100%; display: block;"
               />
-              <!-- Post Catagory -->
-              <p href="#" class="post-catagory">HTML/CSS/Vue.js</p>
-              <!-- Post Conetent -->
-              <div class="post-content">
-                <h2 style="color: black;">Weather Web-App</h2>
-              </div>
             </div>
+            <button type="button" class="btn btn-danger">
+              <img
+                style="height: 30px; width: 30px;"
+                src="img/logo/prototype.png"
+              />
+              HTML/CSS/Vue.js
+            </button>
             <a href="https://weatherapp-pruthvi.netlify.app/" target="_blank">
               <button type="button" class="btn btn-light">
                 <img
@@ -516,21 +526,21 @@
 
           <div class="col-12 col-lg-6">
             <div class="single-post-area" data-wow-delay="200ms">
-              <!-- Post Thumbnail -->
-
+              <h2 style="color: white;">Personal Portfolio V1</h2>
               <img
-                src="img/projects/project1.PNG"
-                style="width: 525px; height: 300px;"
+                src="img/projects/project1PNG.PNG"
+                style="max-width: 100%; max-height: 100%; display: block;"
                 alt=""
               />
-              <!-- Post Catagory -->
-              <p href="#" class="post-catagory">HTML/CSS/React.js</p>
-              <!-- Post Conetent -->
-              <div class="post-content">
-                <h2 style="color: black;">Ship</h2>
-              </div>
             </div>
 
+            <button type="button" class="btn btn-danger">
+              <img
+                style="height: 30px; width: 30px;"
+                src="img/logo/prototype.png"
+              />
+              HTML/CSS/React.js
+            </button>
             <a
               href="https://kunet.kingston.ac.uk/k1939134/PersonalWebsite/"
               target="_blank"
@@ -563,7 +573,7 @@
     <div class="section-padding-80-0 bg-darkblue"></div>
 
     <!-- Our Team Area Start -->
-    <section class="section-padding-80-50 bg-orange">
+    <section id="Education" class="section-padding-80-50 bg-orange">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -632,7 +642,7 @@
     <!-- Our Team Area End -->
 
     <!-- Contact Area Start -->
-    <div class="contact-area section-padding-80-50 bg-white">
+    <div id="Contact" class="contact-area section-padding-80-50 bg-white">
       <div class="row">
         <div class="col-12">
           <div class="section-heading text-center wow">
@@ -703,9 +713,59 @@
       </div>
     </div>
     <!-- Contact Area End -->
+    <div class="section-heading text-center wow">
+      <h2>Social Media</h2>
+    </div>
+    <div class="col-lg-6" style="margin-left: auto; margin-right: auto;">
+      <style scoped>
+        * {
+          box-sizing: border-box;
+        }
+
+        .column {
+          float: left;
+          width: 25%;
+          padding: 5px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+      </style>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/Afoninje" target="_blank">
+            <img src="img/logo/004-github.png" style="width: 50%;" />
+          </a>
+        </div>
+        <div class="column">
+          <a
+            href="https://www.linkedin.com/in/pruthvi-pursnaney-830774194/"
+            target="_blank"
+          >
+            <img src="img/logo/007-linkedin.png" style="width: 50%;" />
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.facebook.com/pruthvi.pursnaney/" target="_blank">
+            <img src="img/logo/008-facebook.png" style="width: 50%;" />
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.instagram.com/pruthvi.148/" target="_blank">
+            <img src="img/logo/006-instagram.png" style="width: 50%;" />
+          </a>
+        </div>
+      </div>
+    </div>
     <!-- Footer Area Start -->
     <footer class="footer-area">
       <p style="text-align: center;">
+        <br />
         Copyright &copy;
         <script>
           document.write(new Date().getFullYear());
