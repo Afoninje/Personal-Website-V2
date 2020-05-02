@@ -576,7 +576,6 @@ input:required {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  background-color: transparent;
 }
 .header-area .search-icon {
   position: relative;
@@ -604,7 +603,6 @@ input:required {
 }
 .top-search-area .modal-content .modal-body button.close-btn.btn {
   padding: 0;
-  background-color: transparent;
 }
 .top-search-area form {
   width: 100%;
@@ -786,19 +784,14 @@ input:required {
   width: 100%;
 }
 
-.classy-navbar-toggler .navbarToggler span {
-  background-color: #252525;
-}
-
 .main-header-area {
   position: relative;
   z-index: 1;
-  background-color: transparent;
+  background-color: black;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 .main-header-area.sticky {
   background-color: #000000;
