@@ -24,6 +24,9 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/gh/bfiessinger/scrollToSmooth@latest/dist/scrolltosmooth.min.js"></script>
+    <!-- OR -->
+    <script src="https://cdn.jsdelivr.net/gh/bfiessinger/scrollToSmooth@{VERSION}/dist/scrolltosmooth.min.js"></script>
   </head>
 
   <body>
@@ -66,12 +69,11 @@
                 <!-- Nav Start -->
                 <div class="classynav">
                   <ul id="nav">
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#welcome-area">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Education">Education</a></li>
-
                     <li><a href="#Contact">Contact</a></li>
                   </ul>
                 </div>
@@ -85,7 +87,8 @@
     <!-- Header Area End -->
 
     <!-- Welcome Area Start -->
-    <section class="welcome-area">
+
+    <section id="welcome-area">
       <div>
         <!-- Single Slide -->
         <div
@@ -121,71 +124,70 @@
     <!-- Welcome Area End -->
 
     <!-- About Us Area Start -->
-    <div
-      id="About"
-      class="about-us-area section-padding-80-0 clearfix bg-white"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="section-heading text-center wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <h2>About Me</h2>
+    <section id="About">
+      <div class="about-us-area section-padding-80-0 clearfix bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="section-heading text-center wow fadeInUp"
+                data-wow-delay="100ms"
+              >
+                <h2>About Me</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-5">
-            <div
-              class="about-video-area mb-80 wow fadeInUp"
-              data-wow-delay="100ms"
-            >
-              <img
-                src="img/profile.jpg"
-                alt=""
-                style="
-                  height: 554px;
-                  width: 335px;
-                  display: block;
-                  margin-left: auto;
-                  margin-right: auto;
-                "
-              />
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+              <div
+                class="about-video-area mb-80 wow fadeInUp"
+                data-wow-delay="100ms"
+              >
+                <img
+                  src="img/profile.jpg"
+                  alt=""
+                  style="
+                    height: 554px;
+                    width: 335px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                  "
+                />
+              </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-7">
-            <div class="about-us-content mb-80">
-              <h4 class="wow fadeInUp" data-wow-delay="300ms">
-                I'm currently studying B.Sc Computer Science at Kingston
-                University , London.
-              </h4>
-              <h4 class="wow fadeInUp" data-wow-delay="400ms">
-                <br />
-                I focus on building websites and applications. I have a passion
-                for building minimalistic , clean and elegant apps which are
-                easy to use , fast and reactive.
-              </h4>
-              <h4 class="wow fadeInUp" data-wow-delay="500ms">
-                <br />
-                I love adventurous team based activities , scientific research
-                and documentaries as well as Sci-Fi novels and TV-Shows.
-              </h4>
-              <div class="wow fadeInUp" data-wow-delay="600ms">
-                <h4><br />Languages:</h4>
-                <div class="row">
-                  <div class="column">
-                    <img src="img/logo/001-spain.png" style="width: 150%;" />
-                  </div>
-                  <div class="column">
-                    <img
-                      src="img/logo/002-united-kingdom.png"
-                      style="width: 150%;"
-                    />
-                  </div>
-                  <div class="column">
-                    <img src="img/logo/003-india.png" style="width: 150%;" />
+            <div class="col-12 col-lg-7">
+              <div class="about-us-content mb-80">
+                <h4 class="wow fadeInUp" data-wow-delay="300ms">
+                  I'm currently studying B.Sc Computer Science at Kingston
+                  University , London.
+                </h4>
+                <h4 class="wow fadeInUp" data-wow-delay="400ms">
+                  <br />
+                  I focus on building websites and applications. I have a
+                  passion for building minimalistic , clean and elegant apps
+                  which are easy to use , fast and reactive.
+                </h4>
+                <h4 class="wow fadeInUp" data-wow-delay="500ms">
+                  <br />
+                  I love adventurous team based activities , scientific research
+                  and documentaries as well as Sci-Fi novels and TV-Shows.
+                </h4>
+                <div class="wow fadeInUp" data-wow-delay="600ms">
+                  <h4><br />Languages:</h4>
+                  <div class="row">
+                    <div class="column">
+                      <img src="img/logo/001-spain.png" style="width: 150%;" />
+                    </div>
+                    <div class="column">
+                      <img
+                        src="img/logo/002-united-kingdom.png"
+                        style="width: 150%;"
+                      />
+                    </div>
+                    <div class="column">
+                      <img src="img/logo/003-india.png" style="width: 150%;" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,7 +195,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- About Us Area End -->
 
     <!-- Why Choose Us Area Start -->
@@ -382,546 +384,562 @@
     </section>
 
     <!-- Blog Area Start -->
-    <div id="Projects" class="alime-blog-area section-padding-80-0 bg-darkblue">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-heading text-center">
-              <h2 style="color: white;">Projects</h2>
-            </div>
-          </div>
-
-          <div
-            class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
-            style="background-color: white;"
-          >
-            <img class="full-w md:w-1/2" src="img\projects\project4PNG.png" />
-            <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
-              <div class="font-bold text-xl mb-4">
-                <h4 style="color: black;">Quiz App (Work In Progress)</h4>
+    <section id="Projects">
+      <div class="alime-blog-area section-padding-80-0 bg-darkblue">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="section-heading text-center">
+                <h2 style="color: white;">Projects</h2>
               </div>
-              <button class="btn btn-danger font-weight-bold">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        style="height: 30px; width: 30px;"
-                        src="img/logo/prototype.png"
-                      />
-                    </td>
-                    <td>&nbsp;HTML/CSS/Vue.js</td>
-                  </tr>
-                </table>
-              </button>
-              <p class="text-base text-gray-700">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
-              </p>
-
-              <a href="https://projectquizz.netlify.app/#/" target="_blank">
-                <button class="btn btn-dark font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/002-browser.png"
-                        />
-                      </td>
-                      <td>&nbsp;Live Demo</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
-
-              <a href="https://github.com/Afoninje/ProjectQuiz" target="_blank">
-                <button class="btn btn-warning font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/001-github.png"
-                        />
-                      </td>
-                      <td>&nbsp;Code</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
             </div>
-          </div>
 
-          <div class="bg-darkblue">
-            <h1 style="color: #14213d;">
-              ---------------------Space create------------------------
-            </h1>
-          </div>
+            <div
+              class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
+              style="background-color: white;"
+            >
+              <img class="full-w md:w-1/2" src="img\projects\project4PNG.png" />
+              <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
+                <div class="font-bold text-xl mb-4">
+                  <h4 style="color: black;">Quiz App (Work In Progress)</h4>
+                </div>
+                <button class="btn btn-danger font-weight-bold">
+                  <table>
+                    <tr>
+                      <td>
+                        <img
+                          style="height: 30px; width: 30px;"
+                          src="img/logo/prototype.png"
+                        />
+                      </td>
+                      <td>&nbsp;HTML/CSS/Vue.js</td>
+                    </tr>
+                  </table>
+                </button>
+                <p class="text-base text-gray-700">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
 
-          <div
-            class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
-            style="background-color: white;"
-          >
-            <img class="full-w md:w-1/2" src="img\projects\project3PNG.png" />
-            <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
-              <div class="font-bold text-xl mb-4">
-                <h4 style="color: black;">Loan EMI Calculator</h4>
+                <a href="https://projectquizz.netlify.app/#/" target="_blank">
+                  <button class="btn btn-dark font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/002-browser.png"
+                          />
+                        </td>
+                        <td>&nbsp;Live Demo</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Afoninje/ProjectQuiz"
+                  target="_blank"
+                >
+                  <button class="btn btn-warning font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/001-github.png"
+                          />
+                        </td>
+                        <td>&nbsp;Code</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
               </div>
-              <button class="btn btn-danger font-weight-bold">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        style="height: 30px; width: 30px;"
-                        src="img/logo/prototype.png"
-                      />
-                    </td>
-                    <td>&nbsp;HTML/CSS/Vue.js</td>
-                  </tr>
-                </table>
-              </button>
-              <p class="text-base text-gray-700">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
-              </p>
-
-              <a
-                href="https://loan-emi-calculator.netlify.app/"
-                target="_blank"
-              >
-                <button class="btn btn-dark font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/002-browser.png"
-                        />
-                      </td>
-                      <td>&nbsp;Live Demo</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
-
-              <a
-                href="https://github.com/Afoninje/Loan-EMI-Calcualtor-Vue.js"
-                target="_blank"
-              >
-                <button class="btn btn-warning font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/001-github.png"
-                        />
-                      </td>
-                      <td>&nbsp;Code</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
             </div>
-          </div>
 
-          <div class="bg-darkblue">
-            <h1 style="color: #14213d;">
-              ---------------------Space create------------------------
-            </h1>
-          </div>
-
-          <div
-            class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
-            style="background-color: white;"
-          >
-            <img class="full-w md:w-1/2" src="img\projects\project2PNG.png" />
-            <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
-              <div class="font-bold text-xl mb-4">
-                <h4 style="color: black;">Weather Web App</h4>
-              </div>
-              <button class="btn btn-danger font-weight-bold">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        style="height: 30px; width: 30px;"
-                        src="img/logo/prototype.png"
-                      />
-                    </td>
-                    <td>&nbsp;HTML/CSS/Vue.js</td>
-                  </tr>
-                </table>
-              </button>
-              <p class="text-base text-gray-700">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
-              </p>
-
-              <a href="https://weatherapp-pruthvi.netlify.app/" target="_blank">
-                <button class="btn btn-dark font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/002-browser.png"
-                        />
-                      </td>
-                      <td>&nbsp;Live Demo</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
-
-              <a
-                href="https://github.com/Afoninje/WeatherAPI-using-Vue.js"
-                target="_blank"
-              >
-                <button class="btn btn-warning font-weight-bold">
-                  <table>
-                    <tr>
-                      <td>
-                        <img
-                          style="height: 30px; width: 30px;"
-                          src="img/logo/001-github.png"
-                        />
-                      </td>
-                      <td>&nbsp;Code</td>
-                    </tr>
-                  </table>
-                </button>
-              </a>
+            <div class="bg-darkblue">
+              <h1 style="color: #14213d;">
+                ---------------------Space create------------------------
+              </h1>
             </div>
-          </div>
 
-          <div class="bg-darkblue">
-            <h1 style="color: #14213d;">
-              ---------------------Space create------------------------
-            </h1>
-          </div>
+            <div
+              class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
+              style="background-color: white;"
+            >
+              <img class="full-w md:w-1/2" src="img\projects\project3PNG.png" />
+              <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
+                <div class="font-bold text-xl mb-4">
+                  <h4 style="color: black;">Loan EMI Calculator</h4>
+                </div>
+                <button class="btn btn-danger font-weight-bold">
+                  <table>
+                    <tr>
+                      <td>
+                        <img
+                          style="height: 30px; width: 30px;"
+                          src="img/logo/prototype.png"
+                        />
+                      </td>
+                      <td>&nbsp;HTML/CSS/Vue.js</td>
+                    </tr>
+                  </table>
+                </button>
+                <p class="text-base text-gray-700">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
 
-          <div
-            class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
-            style="background-color: white;"
-          >
-            <img class="full-w md:w-1/2" src="img\projects\project1PNG.png" />
-            <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
-              <div class="font-bold text-xl mb-4">
-                <h4 style="color: black;">Personal Portfolio V1</h4>
+                <a
+                  href="https://loan-emi-calculator.netlify.app/"
+                  target="_blank"
+                >
+                  <button class="btn btn-dark font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/002-browser.png"
+                          />
+                        </td>
+                        <td>&nbsp;Live Demo</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Afoninje/Loan-EMI-Calcualtor-Vue.js"
+                  target="_blank"
+                >
+                  <button class="btn btn-warning font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/001-github.png"
+                          />
+                        </td>
+                        <td>&nbsp;Code</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
               </div>
-              <button class="btn btn-danger font-weight-bold">
-                <table>
-                  <tr>
-                    <td>
-                      <img
-                        style="height: 30px; width: 30px;"
-                        src="img/logo/prototype.png"
-                      />
-                    </td>
-                    <td>&nbsp;HTML/CSS/React.js</td>
-                  </tr>
-                </table>
-              </button>
-              <p class="text-base text-gray-700">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
-              </p>
+            </div>
 
-              <a
-                href="https://kunet.kingston.ac.uk/k1939134/PersonalWebsite/"
-                target="_blank"
-              >
-                <button class="btn btn-dark font-weight-bold">
+            <div class="bg-darkblue">
+              <h1 style="color: #14213d;">
+                ---------------------Space create------------------------
+              </h1>
+            </div>
+
+            <div
+              class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
+              style="background-color: white;"
+            >
+              <img class="full-w md:w-1/2" src="img\projects\project2PNG.png" />
+              <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
+                <div class="font-bold text-xl mb-4">
+                  <h4 style="color: black;">Weather Web App</h4>
+                </div>
+                <button class="btn btn-danger font-weight-bold">
                   <table>
                     <tr>
                       <td>
                         <img
                           style="height: 30px; width: 30px;"
-                          src="img/logo/002-browser.png"
+                          src="img/logo/prototype.png"
                         />
                       </td>
-                      <td>&nbsp;Live Demo</td>
+                      <td>&nbsp;HTML/CSS/Vue.js</td>
                     </tr>
                   </table>
                 </button>
-              </a>
+                <p class="text-base text-gray-700">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
 
-              <a
-                href="https://github.com/Afoninje/Personal-Website-Version1"
-                target="_blank"
-              >
-                <button class="btn btn-warning font-weight-bold">
+                <a
+                  href="https://weatherapp-pruthvi.netlify.app/"
+                  target="_blank"
+                >
+                  <button class="btn btn-dark font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/002-browser.png"
+                          />
+                        </td>
+                        <td>&nbsp;Live Demo</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Afoninje/WeatherAPI-using-Vue.js"
+                  target="_blank"
+                >
+                  <button class="btn btn-warning font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/001-github.png"
+                          />
+                        </td>
+                        <td>&nbsp;Code</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="bg-darkblue">
+              <h1 style="color: #14213d;">
+                ---------------------Space create------------------------
+              </h1>
+            </div>
+
+            <div
+              class="max-w-xs m-auto overflow-hidden shadow-lg rounded-lg mt-2 md:max-w-screen-md md:flex sm:max-w-sm"
+              style="background-color: white;"
+            >
+              <img class="full-w md:w-1/2" src="img\projects\project1PNG.png" />
+              <div class="px-4 py-4 text-gray-800 md:w-1/2 md:p-12">
+                <div class="font-bold text-xl mb-4">
+                  <h4 style="color: black;">Personal Portfolio V1</h4>
+                </div>
+                <button class="btn btn-danger font-weight-bold">
                   <table>
                     <tr>
                       <td>
                         <img
                           style="height: 30px; width: 30px;"
-                          src="img/logo/001-github.png"
+                          src="img/logo/prototype.png"
                         />
                       </td>
-                      <td>&nbsp;Code</td>
+                      <td>&nbsp;HTML/CSS/React.js</td>
                     </tr>
                   </table>
                 </button>
-              </a>
+                <p class="text-base text-gray-700">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua.
+                </p>
+
+                <a
+                  href="https://kunet.kingston.ac.uk/k1939134/PersonalWebsite/"
+                  target="_blank"
+                >
+                  <button class="btn btn-dark font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/002-browser.png"
+                          />
+                        </td>
+                        <td>&nbsp;Live Demo</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Afoninje/Personal-Website-Version1"
+                  target="_blank"
+                >
+                  <button class="btn btn-warning font-weight-bold">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            style="height: 30px; width: 30px;"
+                            src="img/logo/001-github.png"
+                          />
+                        </td>
+                        <td>&nbsp;Code</td>
+                      </tr>
+                    </table>
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Blog Area End -->
     <div class="section-padding-80-0 bg-darkblue"></div>
 
     <!-- Our Team Area Start -->
-    <div class="alime-portfolio-area">
-      <section id="Education" class="section-padding-80-50 bg-orange">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div
-                class="section-heading text-center wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <h2>Education</h2>
+    <section id="Education">
+      <div class="alime-portfolio-area">
+        <section class="section-padding-80-50 bg-orange">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="section-heading text-center wow fadeInUp"
+                  data-wow-delay="100ms"
+                >
+                  <h2>Education</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Team Member Area -->
+              <div class="col-md-4 center">
+                <div
+                  class="team-content-area text-center mb-30 wow fadeInUp"
+                  data-wow-delay="100ms"
+                >
+                  <img
+                    src="img/logo/002-graduated.png"
+                    style="
+                      height: 70px;
+                      width: 70px;
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                  <h5>B.Sc Computer Science</h5>
+
+                  <h6><br />Kingston University - London</h6>
+                  <p><br /></p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped bg-danger"
+                      role="progressbar"
+                      style="width: 50%;"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      In-Progress
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team Member Area -->
+              <div class="col-md-4 center">
+                <div
+                  class="team-content-area text-center mb-30 wow fadeInUp"
+                  data-wow-delay="100ms"
+                  style="padding: 22px;"
+                >
+                  <img
+                    src="img/logo/001-certificate.png"
+                    style="
+                      height: 70px;
+                      width: 70px;
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                  <h5>Diploma In Computer Engineering</h5>
+                  <h6><br />K.J Somaiya Polytechnic, <br />Mumbai</h6>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped bg-danger"
+                      role="progressbar"
+                      style="width: 100%;"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      Completed
+                    </div>
+                    <!-- <p><br /></p> -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Team Member Area -->
+              <div class="col-md-4 center">
+                <div
+                  class="team-content-area text-center mb-30 wow fadeInUp"
+                  data-wow-delay="100ms"
+                  style="padding: 22px;"
+                >
+                  <img
+                    src="img/logo/009-school.png"
+                    style="
+                      height: 70px;
+                      width: 70px;
+                      display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                  <h5>Secondary Education <br />High School</h5>
+                  <h6>
+                    <br />Ryan International School, <br />
+                    Mumbai
+                  </h6>
+                  <div class="progress">
+                    <div
+                      class="progress-bar progress-bar-striped bg-danger"
+                      role="progressbar"
+                      style="width: 100%;"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      Completed
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="row">
-            <!-- Team Member Area -->
-            <div class="col-md-4 center">
-              <div
-                class="team-content-area text-center mb-30 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <img
-                  src="img/logo/002-graduated.png"
-                  style="
-                    height: 70px;
-                    width: 70px;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-                <h5>B.Sc Computer Science</h5>
-
-                <h6><br />Kingston University - London</h6>
-                <p><br /></p>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped bg-danger"
-                    role="progressbar"
-                    style="width: 50%;"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    In-Progress
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Team Member Area -->
-            <div class="col-md-4 center">
-              <div
-                class="team-content-area text-center mb-30 wow fadeInUp"
-                data-wow-delay="100ms"
-                style="padding: 22px;"
-              >
-                <img
-                  src="img/logo/001-certificate.png"
-                  style="
-                    height: 70px;
-                    width: 70px;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-                <h5>Diploma In Computer Engineering</h5>
-                <h6><br />K.J Somaiya Polytechnic, <br />Mumbai</h6>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped bg-danger"
-                    role="progressbar"
-                    style="width: 100%;"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    Completed
-                  </div>
-                  <!-- <p><br /></p> -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Team Member Area -->
-            <div class="col-md-4 center">
-              <div
-                class="team-content-area text-center mb-30 wow fadeInUp"
-                data-wow-delay="100ms"
-                style="padding: 22px;"
-              >
-                <img
-                  src="img/logo/009-school.png"
-                  style="
-                    height: 70px;
-                    width: 70px;
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                  "
-                />
-                <h5>Secondary Education <br />High School</h5>
-                <h6>
-                  <br />Ryan International School, <br />
-                  Mumbai
-                </h6>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped bg-danger"
-                    role="progressbar"
-                    style="width: 100%;"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    Completed
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </section>
     <!-- Our Team Area End -->
 
     <!-- Contact Area Start -->
-    <div id="Contact" class="contact-area section-padding-80-0 bg-white">
+    <section id="Contact">
+      <div class="contact-area section-padding-80-0 bg-white">
+        <div class="section-heading text-center wow">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <div class="contact-info mb-30">
+                <h4 class="mb-30">Email:</h4>
+                <a href="mailto:info.deercreative@gmail.com"
+                  >pruthvipursnaney4@gmail.com</a
+                >
+              </div>
+              <!-- Contact Info -->
+              <div class="contact-info mb-30">
+                <h4 class="mb-30">Phone Number:</h4>
+                <h5>+44 7751893111</h5>
+              </div>
+              <div class="contact-info mb-30">
+                <h4 class="mb-30">Location:</h4>
+                <h5>London, United Kingdom</h5>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+              <!-- Leave A Reply -->
+              <div class="alime-contact-form mb-30">
+                <h4 class="mb-30">Leave A Comment</h4>
+
+                <!-- Form -->
+                <form action="#" method="post">
+                  <div class="row">
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        name="message-name"
+                        class="form-control mb-30"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="email"
+                        name="message-email"
+                        class="form-control mb-30"
+                        placeholder="Email"
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        name="message"
+                        class="form-control mb-30"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="button" class="btn btn-dark">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Area End -->
       <div class="section-heading text-center wow">
-        <h2>Contact Me</h2>
+        <h2>Social Media</h2>
       </div>
-      <div class="container">
+      <div class="col-lg-6" style="margin-left: auto; margin-right: auto;">
+        <style scoped>
+          * {
+            box-sizing: border-box;
+          }
+
+          .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+            padding-left: 30px;
+            padding-right: 30px;
+          }
+
+          .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+        </style>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="contact-info mb-30">
-              <h4 class="mb-30">Email:</h4>
-              <a href="mailto:info.deercreative@gmail.com"
-                >pruthvipursnaney4@gmail.com</a
-              >
-            </div>
-            <!-- Contact Info -->
-            <div class="contact-info mb-30">
-              <h4 class="mb-30">Phone Number:</h4>
-              <h5>+44 7751893111</h5>
-            </div>
-            <div class="contact-info mb-30">
-              <h4 class="mb-30">Location:</h4>
-              <h5>London, United Kingdom</h5>
-            </div>
+          <div class="column">
+            <a href="https://github.com/Afoninje" target="_blank">
+              <img src="img/logo/004-github.png" style="width: 100%;" />
+            </a>
           </div>
-
-          <div class="col-12 col-md-6 col-lg-6">
-            <!-- Leave A Reply -->
-            <div class="alime-contact-form mb-30">
-              <h4 class="mb-30">Leave A Comment</h4>
-
-              <!-- Form -->
-              <form action="#" method="post">
-                <div class="row">
-                  <div class="col-12">
-                    <input
-                      type="text"
-                      name="message-name"
-                      class="form-control mb-30"
-                      placeholder="Your Name"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <input
-                      type="email"
-                      name="message-email"
-                      class="form-control mb-30"
-                      placeholder="Email"
-                    />
-                  </div>
-
-                  <div class="col-12">
-                    <textarea
-                      name="message"
-                      class="form-control mb-30"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <div class="col-12">
-                    <button type="button" class="btn btn-dark">Submit</button>
-                  </div>
-                </div>
-              </form>
-            </div>
+          <div class="column">
+            <a
+              href="https://www.linkedin.com/in/pruthvi-pursnaney-830774194/"
+              target="_blank"
+            >
+              <img src="img/logo/007-linkedin.png" style="width: 100%;" />
+            </a>
+          </div>
+          <div class="column">
+            <a
+              href="https://www.facebook.com/pruthvi.pursnaney/"
+              target="_blank"
+            >
+              <img src="img/logo/008-facebook.png" style="width: 100%;" />
+            </a>
+          </div>
+          <div class="column">
+            <a href="https://www.instagram.com/pruthvi.148/" target="_blank">
+              <img src="img/logo/006-instagram.png" style="width: 100%;" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Contact Area End -->
-    <div class="section-heading text-center wow">
-      <h2>Social Media</h2>
-    </div>
-    <div class="col-lg-6" style="margin-left: auto; margin-right: auto;">
-      <style scoped>
-        * {
-          box-sizing: border-box;
-        }
-
-        .column {
-          float: left;
-          width: 25%;
-          padding: 5px;
-          padding-left: 30px;
-          padding-right: 30px;
-        }
-
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-      </style>
-      <div class="row">
-        <div class="column">
-          <a href="https://github.com/Afoninje" target="_blank">
-            <img src="img/logo/004-github.png" style="width: 100%;" />
-          </a>
-        </div>
-        <div class="column">
-          <a
-            href="https://www.linkedin.com/in/pruthvi-pursnaney-830774194/"
-            target="_blank"
-          >
-            <img src="img/logo/007-linkedin.png" style="width: 100%;" />
-          </a>
-        </div>
-        <div class="column">
-          <a href="https://www.facebook.com/pruthvi.pursnaney/" target="_blank">
-            <img src="img/logo/008-facebook.png" style="width: 100%;" />
-          </a>
-        </div>
-        <div class="column">
-          <a href="https://www.instagram.com/pruthvi.148/" target="_blank">
-            <img src="img/logo/006-instagram.png" style="width: 100%;" />
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- Footer Area Start -->
     <footer class="footer-area">
       <p style="text-align: center;">
@@ -933,7 +951,29 @@
         All rights reserved | Icons made by Pixel perfect from
         <a href="https://www.flaticon.com" target="_blank">flaticon</a>
       </p>
+      <script>
+        var smoothScroll = new scrollToSmooth("a", {
+          targetAttribute: "href",
+          duration: 400,
+          durationRelative: false,
+          durationMin: false,
+          durationMax: false,
+          easing: "easeOutCubic",
+          onScrollStart: (data) => {
+            console.log(data);
+          },
+          onScrollUpdate: (data) => {
+            console.log(data);
+          },
+          onScrollEnd: (data) => {
+            console.log(data);
+          },
+          fixedHeader: null,
+        });
+        smoothScroll.init();
+      </script>
     </footer>
+
     <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
