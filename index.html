@@ -24,6 +24,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <script src="https://cdn.jsdelivr.net/gh/bfiessinger/scrollToSmooth@latest/dist/scrolltosmooth.min.js"></script>
     <!-- OR -->
     <script src="https://cdn.jsdelivr.net/gh/bfiessinger/scrollToSmooth@{VERSION}/dist/scrolltosmooth.min.js"></script>
@@ -821,7 +822,9 @@
     <section id="Contact">
       <div class="contact-area section-padding-80-0 bg-white">
         <div class="section-heading text-center wow">
-          <h2>Contact Me</h2>
+          <h2>
+            Contact Me
+          </h2>
         </div>
         <div class="container">
           <div class="row">
@@ -849,12 +852,16 @@
                 <h4 class="mb-30">Leave A Comment</h4>
 
                 <!-- Form -->
-                <form action="#" method="post">
+                <form
+                  id="userinfo"
+                  action="https://formspree.io/xlepddeo"
+                  method="POST"
+                >
                   <div class="row">
                     <div class="col-12">
                       <input
                         type="text"
-                        name="message-name"
+                        name="username"
                         class="form-control mb-30"
                         placeholder="Your Name"
                       />
@@ -862,7 +869,7 @@
                     <div class="col-12">
                       <input
                         type="email"
-                        name="message-email"
+                        name="useremail"
                         class="form-control mb-30"
                         placeholder="Email"
                       />
@@ -870,15 +877,18 @@
 
                     <div class="col-12">
                       <textarea
-                        name="message"
+                        name="usermessage"
                         class="form-control mb-30"
                         placeholder="Message"
                       ></textarea>
                     </div>
                     <div class="col-12">
-                      <button type="button" class="btn btn-dark">Submit</button>
+                      <button type="submit" class="btn btn-dark submit">
+                        Submit
+                      </button>
                     </div>
                   </div>
+                  <input type="hidden" name="_next" value="#Contact" />
                 </form>
               </div>
             </div>
@@ -886,10 +896,6 @@
         </div>
       </div>
 
-      <!-- Contact Area End -->
-      <div class="section-heading text-center wow">
-        <h2>Social Media</h2>
-      </div>
       <div class="col-lg-6" style="margin-left: auto; margin-right: auto;">
         <style scoped>
           * {
@@ -925,16 +931,16 @@
             </a>
           </div>
           <div class="column">
-            <a
-              href="https://www.facebook.com/pruthvi.pursnaney/"
-              target="_blank"
-            >
-              <img src="img/logo/008-facebook.png" style="width: 100%;" />
+            <a href="https://codepen.io/afoninje/pens/showcase" target="_blank">
+              <img src="img/logo/001-codepen.png" style="width: 100%;" />
             </a>
           </div>
           <div class="column">
-            <a href="https://www.instagram.com/pruthvi.148/" target="_blank">
-              <img src="img/logo/006-instagram.png" style="width: 100%;" />
+            <a
+              href="https://stackoverflow.com/users/13490851/pruthvi-pursnaney"
+              target="_blank"
+            >
+              <img src="img/logo/002-stack-overflow.png" style="width: 100%;" />
             </a>
           </div>
         </div>
